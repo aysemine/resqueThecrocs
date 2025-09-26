@@ -3,8 +3,18 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import pandas as pd
 import joblib
+import uvicorn
 
 app = FastAPI()
+
+if __name__ == "__main__":
+    uvicorn.run(
+        "app:app",
+        host="0.0.0.0",
+        port=8000,
+        reload=True
+    )
+
 
 origins = ["*"]
 
