@@ -3,7 +3,10 @@
 Spotted a crocodile and curious whether it’s endangered or not? This ML-powered guesser will come in handy!
 
 This web application predicts crocodile conservation status using machine learning algorithms.  
-It combines a **FastAPI backend**, a **Streamlit frontend**, and the **trained ML model**.
+It combines a **FastAPI backend**, a **Streamlit frontend**, and the **trained ML model**. 
+
+You can check out the backend API [here](https://resquethecrocs.onrender.com/), powered by Render.
+
 
 ![Crocodile App Demo](gif.gif)
 
