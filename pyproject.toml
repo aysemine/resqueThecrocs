@@ -1,0 +1,7 @@
+[project]
+name = "resquethecrocs"
+version = "0.1.0"
+description = "This is a crocodile prediction website"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
