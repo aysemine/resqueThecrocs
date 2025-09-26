@@ -5,12 +5,14 @@ Spotted a crocodile and curious whether it’s endangered or not? This ML-powere
 This web application predicts crocodile conservation status using machine learning algorithms.  
 It combines a **FastAPI backend**, a **Streamlit frontend**, and the **trained ML model**.
 
+![Crocodile App Demo](gif.gif)
+
 ## Data Source
 
 The dataset used for this project was obtained from Kaggle [Global Crocodile Species Dataset](https://www.kaggle.com/datasets/zadafiyabhrami/global-crocodile-species-dataset) by Bhrami Zadafiya, and contains features like length, weight, scientific name, genus, age class, sex, and habitat of crocodiles.
 
 
-![Crocodile App Demo](gif.gif)
+
 
 ## Features
 
