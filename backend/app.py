@@ -72,7 +72,7 @@ def root():
     return {"message": "FastAPI is running. Use POST to predict."}
 
 # MCP manifest
-with open(".well-known/mcp.json") as f:
+with open("backend/.well-known/mcp.json") as f:
     mcp_manifest = json.load(f)
 
 @app.get("/.well-known/mcp.json", include_in_schema=False)
