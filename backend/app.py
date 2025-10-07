@@ -4,6 +4,7 @@ from pydantic import BaseModel
 import pandas as pd
 import joblib
 import uvicorn
+import json
 
 app = FastAPI()
 
@@ -70,6 +71,12 @@ def post(postBase: PostBase):
 def root():
     return {"message": "FastAPI is running. Use POST to predict."}
 
+# MCP manifest
+with open(".well-known/mcp.json") as f:
+    mcp_manifest = json.load(f)
 
+@app.get("/.well-known/mcp.json", include_in_schema=False)
+def get_mcp_manifest():
+    return mcp_manifest
 
 

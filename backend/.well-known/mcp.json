@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "name": "ResqueThecrocs API",
+  "description": "Predict crocodile conservation status",
+  "tools": [
+    {
+      "name": "predict_conservation",
+      "description": "Predict the conservation status for a given crocodile sample",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "observed_length":  {"type": "float"},
+          "observed_weight":  {"type": "float"},
+          "scientific_name": {"type": "string"},
+          "genus": {"type": "string"},
+          "age_class": {"type": "string"},
+          "sex": {"type": "string"},
+          "habitat_simple": {"type": "string"}
+        },
+        "required": ["observed_length", "observed_weight", "scientific_name", "genus", "age_class", "sex", "habitat_simple"]
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "prediction": {"type": "string"}
+        }
+      }
+    }
+  ]
+}
